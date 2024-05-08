@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: url(cuisine-background.jpg) no-repeat center center fixed;
+    background-size:cover;
+}
+
+.wrapper {
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px black;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.wrapper input {
+    border: solid white 1.5px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+    color: white;
+
+
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+   
+}
+
+.input-box svg {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+    color: white;
+   
+}
+
+.input-box ::placeholder {
+    color: rgb(111, 111, 111);
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+button {
+    width: 150px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+
+button:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+p {
+    margin: 0;
+    margin-top: 20px;
+}
