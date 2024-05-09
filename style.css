@@ -2,23 +2,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
     background: url(cuisine-background.jpg) no-repeat center center fixed;
     background-size:cover;
 }
 
 .wrapper {
+    margin-top: 30px;
     border: solid black 2px;
     border-radius: 10px;
     padding: 20px;
-    width: 400px;
+    width: 500px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px black;
 }
 
 .wrapper h1 {
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .wrapper input {
@@ -72,4 +72,19 @@ button:hover {
 p {
     margin: 0;
     margin-top: 20px;
+    color: black
+}
+
+.logo-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    border: solid black 10px;
+    border-radius: 10px;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
 }

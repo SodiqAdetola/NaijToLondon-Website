@@ -15,6 +15,9 @@
   <body>
     <div class="wrapper">
     <form>
+      <div class="logo-div">
+      <img src="naij-cuisine-logo.png" alt="website logo image" class="logo-image" >
+      </div>
       <h1 class="title">Sign Up</h1>
 
       <p>Enter Email</p>
@@ -51,7 +54,7 @@
 
       <div class="btnWrapper">
         <div><button type="submit" onclick="auth()">Sign Up</button></div>
-        <div><button>Log In</button></div>
+        
       </div>
     </form>
     </div>
@@ -73,9 +76,6 @@
         if (password.length >= 8) {
           validPassword = true;
         }
-        else {
-          alert("Password must be 8 or more chracters")
-        }
 
         if (validPassword && (password == matchPassword)) {
 
@@ -84,7 +84,7 @@
 
         }
         else {
-          alert("Password must match")
+          alert("Password must be 8 or more characters and must match")
         }
 
       }
