@@ -1,0 +1,368 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo-image {
+    width: 120px;
+    border: 10px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    border-bottom: solid 10px white;
+    z-index: 1;
+
+}
+
+
+
+nav {
+    width: 100%;
+    min-width:fit-content;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    border: solid white 1px;
+    padding: 3px;
+    border-radius: 2px;
+    min-width: 100px;
+    text-align: center;
+    margin-right: 10px;
+    transition: 0.5s;
+
+
+}
+
+
+
+nav a:hover,
+nav a.active {
+    color: rgb(85, 85, 85);
+    border: solid white 0px;
+    border-radius: 3px;
+    padding: 7px 10px;
+    background-color: white;
+    min-width: 100px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav button {
+    border: white solid 2px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 13px;
+    transition: 0.3s;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+
+nav button:hover {
+    border: 0;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color:white;
+    font-size: 5rem;
+    font-weight: 900;
+    background-color: rgb(32, 32, 32);
+
+}
+
+section:nth-child(even) {
+    background-color: rgb(76, 76, 76);
+}
+
+
+#home, #contact, #cuisine{
+    background-image: url(images/black-smoke.jpg);
+    background-size: cover;
+    background-blend-mode:lighten;
+    
+}
+
+
+#about {
+    background-image: url(images/white-smoke.jpg);
+    background-size: cover;
+}
+
+
+
+
+#home .slogan-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home div p {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-align: center;
+    margin-right: 100px;
+    
+}
+
+#home .container {
+    display: flex;
+    gap: 20px;
+}
+
+#home div img {
+    height: 115%;
+    width: 750px;
+    box-shadow: 5px 0px 5px -3px rgb(0, 0, 0);
+    padding: 0;
+    object-fit: cover;
+}
+
+
+
+#map #map-container {
+    min-height: 550px;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+#cuisine {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    gap: 10px;
+    font-weight: normal;
+
+    
+
+}
+
+#cuisine .cuisine-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 900px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 125px;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: rgb(61, 61, 61);
+    border: 2px solid rgb(214, 214, 214);
+
+    background-color: rgb(231, 231, 231);
+    
+    box-shadow: 0px 0px 100px 0px rgb(0, 0, 0);
+
+
+}
+
+.cuisine-container .title {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.cuisine-container .food-image {
+    font-size: 12px;
+    margin-right: 10px;
+    
+    
+}
+.cuisine-container .food-image img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+    
+}
+.cuisine-container .info {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    border-radius: 5px;
+    background-color: rgb(194, 194, 194);
+    height: min-content;
+    
+
+
+    
+}
+.cuisine-container .weblink {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   
+}
+
+.weblink a {
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(156, 156, 156);
+}
+.weblink a:hover{
+    color: white;
+    border-radius: 5px;
+
+    background-color: rgb(73, 73, 73);
+}
+
+
+
+.image-info-container {
+    display: flex;
+}
+
+.details p{
+    text-align: center;
+    font-size: 17px;
+
+}
+
+
+
+
+@media (max-width:950px){
+
+    nav a{
+        margin: 0;
+        min-width: 0;
+        border: 0;
+        
+    }
+    nav {
+        justify-content: space-around;
+    }
+
+    nav a:hover,
+    nav a.active {
+    min-width: 0px;
+    text-align: center;
+    }
+
+    nav button {
+        margin: 0;
+    }
+
+    #home .container {
+        display: block;
+        width: 100%;
+    
+        
+    }
+
+    #home div img {
+        
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50%;   
+        margin: 0;
+        padding: 0;
+        box-shadow: 3px 3px 5px black;
+        
+    }
+
+    #home div p {
+        font-size: 30px;
+        max-width: 400px;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 5px rgb(0, 0, 0);
+        display: flex;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+        
+        
+    }
+
+    #home .slogan-container {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    #home {
+        background-image: url(images/black-smoke.jpg);
+        background-color: black;
+
+    }
+    .details p{
+    
+        font-size: 13px;
+    
+    }
+
+    .image-info-container {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .cuisine-container .food-image img{
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        
+        
+        
+    }
+
+    #cuisine .cuisine-container {
+        width: 70%;
+    }
+
+}
+
+
+
+

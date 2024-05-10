@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="page2.css"> 
+
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg8ECVHisRwURB-k41b_dgXkiPxrtD6RI&loading=async&callback=initMap" defer>
+    </script>
+    
 </head>
 <body>
     <header>
-        <img src="naij-cuisine-logo.png" alt="website logo image" class="logo-image">
+        <img src="images/naij-cuisine-logo.png" alt="website logo image" class="logo-image">
 
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#map">Map</a>
             <a href="#cuisine">Cuisine</a>
-            <a href="#blog">Blog</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
 
@@ -26,22 +31,39 @@
                   
             </button>
         </nav>
+        <br>
     </header>
+    
 
-    <section id="home">Home</section>
-    <section id="map">Map</section>
-    <section id="cuisine">Cuisine</section>
-    <section id="blog">Blog</section>
+    <section id="home">
+        <div class="home container">
+            <div class="image-container">
+                <img src="images/home-foodImage.webp" alt="image of a variety of nigerian food.">
+            </div>
+            <div class="slogan-container">
+                <p>"Connecting the flavours of Naija directly to you."</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="map">
+        <div id="map-container">
+
+        </div>
+        
+
+    </section>
+
+
+    <section id="cuisine">
+        
+    </section>
     <section id="about">About</section>
     <section id="contact">Contact</section>
 
 
 
-    <script>
-        function logout() {
-            window.location.assign('index.html');
-        }
-
-    </script>
+  
+    <script src="script.js"></script>
 </body>
 </html>

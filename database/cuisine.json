@@ -1,0 +1,60 @@
+{
+    "business":[
+        {
+            "id": 1,
+            "name": "Enish Oxford Street",
+            "address": "3 Berners St, London W1T 3LD",
+            "contact": "02037718665",
+            "image": "images/enish-image.png",
+            "website": "http://www.enish.co.uk/",
+            "rating": "4.2",
+            "description": "Our chefs expertly prepare traditional favourites like Jollof Rice, Egusi Soup & all of your favourite dishes. At Enish, we're passionate about sharing the rich culinary traditions of Nigeria with the world. Come and join us for a truly authentic and delicious dining experience today!"
+        },
+
+        {
+            "id": 2,
+            "name": "Presidential Suya",
+            "address": "160-164 Old Kent Rd, London SE1 5TY",
+            "contact": "02077084491",
+            "image": "images/presidental-suya-image.png",
+            "website": "https://www.presidentialsuya.co.uk/",
+            "rating": "3.8",
+            "description": "We offer discerning customers a true, authentic Nigerian cuisine. Our regulars repeat again and again for the never-changing favourites. Our lively and refreshing seasonal inspired additions keeps things interesting. Our food is intuitively and instinctively prepared that we guarantee no recipe books, no measuring or timing devices in our kitchen."
+        },
+
+        {
+            "id": 3,
+            "name": "280 Degrees",
+            "address": "280 Kilburn High Rd, London NW6 2BY",
+            "contact": "02073288832",
+            "image": "images/280-degrees-image.png",
+            "website": "https://280degrees.uk/",
+            "rating": "4.0",
+            "description": "280 Degrees African restaurant delivers lip-smacking  African Foods and much more straight to your doorstep in no time. Savor the flavors of our culinary creations, where fresh ingredients meet expert craftsmanship. Whether it's a classic dish or a modern twist, our restaurant offers a delectable experience for every taste."
+        },
+        
+
+        {
+            "id": 4,
+            "name": "",
+            "address": "",
+            "contact": "",
+            "image": "",
+            "website": "",
+            "rating": "",
+            "description": ""
+        },
+
+        {
+            "id": 5,
+            "name": "",
+            "address": "",
+            "contact": "",
+            "image": "",
+            "website": "",
+            "rating": "",
+            "description": ""
+        }
+        
+    ]
+}
