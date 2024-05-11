@@ -77,14 +77,19 @@
           validPassword = true;
         }
 
-        if (validPassword && (password == matchPassword)) {
+        if (email.length && email.includes('@') && username.length && validPassword && (password == matchPassword)) {
 
           window.location.assign('page2.html');
           alert("Successful Sign Up!")
-
+        }
+        else if(!email.length || !email.includes('@')) {
+          alert("Please insert valid email.")
+        }
+        else if(!username.length) {
+          alert("Please insert a username..")
         }
         else {
-          alert("Password must be 8 or more characters and must match")
+          alert("Password must be 8 or more characters and must match.")
         }
 
       }
