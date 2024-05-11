@@ -47,7 +47,7 @@ function initMap() {
         mapId: '53c21e62b06dfec'
     });
 
-
+    //fetch data to use in creating marker
     fetch("http://localhost:3000/business")
     .then(res => res.json())
     .then(json => {
@@ -58,10 +58,10 @@ function initMap() {
                 const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${API_KEY}`);
                 const responseData = response.data
                 const location = responseData.results[0].geometry.location;
-                // Call a function to create a marker with the location
 
+                // testing that location displays as expected
                 console.log(location);
-
+                // calling function to create a marker with the retrieved variables
                 createMarker(map, location, name);
                 
             } catch (error) {
@@ -73,13 +73,66 @@ function initMap() {
     
 }
 
+function createMarker(map, location, name) {
+
+    //create marker using variables
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: name
+    });
+
+    marker.addListener('mouseover', () => {
+        const infoWindow = new google.maps.InfoWindow({
+            content:  `<div style="color: black; font-weight: bold;">
+                        ${name}
+                    </div>`,
+            disableAutoPan: true
+        });
+        infoWindow.open(map, marker);
+    
+    
+    // Closes the info window when mouse leaves the marker
+    marker.addListener('mouseout', () => {
+        infoWindow.close();
+        });
+    });
+
+
+    marker.addListener('click', () => {
+        const hash = `#${name}`;
+
+        window.location.hash = hash;
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//retrieving html element for where I want to add the cuisine entities
 let body = document.getElementById("cuisine")
 
+
+
+//retreiving cuisine data from json data displayed in the link.
+
 fetch("http://localhost:3000/business")
+    //convert response from fetch method to json data format
     .then(res => res.json())
+    //process the jason data format
     .then(json => {
+        //map fuction to iterate through json data format.
         json.map(data => {
             console.log(data)
+            //appending the div created from addCuisine to the html element.
             body.append(addCuisine(data));
         })
     })
@@ -130,43 +183,7 @@ function addCuisine({name,image,description,address,contact,rating,website}) {
     return div
 }
 
-    function createMarker(map, location, name) {
-
-        
-
-        //custom marker
-        
-
-        // create marker for the location
-        const marker = new google.maps.Marker({
-            position: location,
-            map: map,
-            title: name
-        });
-
-        marker.addListener('mouseover', () => {
-            const infoWindow = new google.maps.InfoWindow({
-                content:  `<div style="color: black; font-weight: bold;">
-                            ${name}
-                        </div>`,
-                disableAutoPan: true
-            });
-            infoWindow.open(map, marker);
-        
-        
-        // Closes the info window when mouse leaves the marker
-        marker.addListener('mouseout', () => {
-            infoWindow.close();
-            });
-        });
-
-
-        marker.addListener('click', () => {
-            const hash = `#${name}`;
-
-            window.location.hash = hash;
-        });
-    }
+    
     
 window.initMap = initMap;
 

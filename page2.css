@@ -51,7 +51,7 @@ nav a {
     border: solid white 1px;
     padding: 3px;
     border-radius: 2px;
-    min-width: 100px;
+    min-width: 120px;
     text-align: center;
     margin-right: 10px;
     transition: 0.5s;
@@ -128,6 +128,7 @@ section:nth-child(even) {
 
 
 #contact {
+    min-height: fit-content;
     min-height: 100vh;
 }
 
@@ -403,7 +404,7 @@ section:nth-child(even) {
     font-weight: 200;
     font-size: 25px;
     background-color: rgba(0, 0, 0, 0.361);
-    border-radius: 5px;
+    border-radius: 30px;
     padding: 30px;
     
 }
@@ -431,13 +432,13 @@ section:nth-child(even) {
 #contact .contact-container {
     display: flex;
     width: 80%;
-    height: 800px;
+    
 }
 
 #contact .contact-column {
     display: flex;
     flex-direction: column;
-    height: 800px;
+    
     align-items:center;
     gap: 50px;
     width: 100%;
