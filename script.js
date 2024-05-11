@@ -167,7 +167,7 @@ function addCuisine({name,image,description,address,contact,rating,website}) {
 
     
  
-initMap();
+window.initMap = initMap;
 
 
 
