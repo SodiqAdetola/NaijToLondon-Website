@@ -5,9 +5,12 @@ var map;
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("header nav a");
 
+
+
 function logout() {
     window.location.assign('index.html');
 }
+
 window.onload = () => {
     window.scrollTo({ top: 0, behavior: 'auto' }); // Starts window from top of the page
 };
@@ -84,7 +87,6 @@ fetch("http://localhost:3000/business")
 
 
 
-
 function addCuisine({name,image,description,address,contact,rating,website}) {
     let div = document.createElement('div');
     div.classList.add("cuisine-container");
@@ -111,13 +113,15 @@ function addCuisine({name,image,description,address,contact,rating,website}) {
             <a href="${website}" target="_blank" class="website-link">
 
             Access Website
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+                <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+            </svg>
             </a>
 
             <a class="back-to-map" href="#map">
                 Back to Map
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
-                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                 </svg>
                 
             </a>
@@ -163,11 +167,13 @@ function addCuisine({name,image,description,address,contact,rating,website}) {
             window.location.hash = hash;
         });
     }
-
-
     
- 
 window.initMap = initMap;
+
+window.logout = logout;
+
+
+
 
 
 

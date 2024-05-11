@@ -2,11 +2,13 @@
     scroll-behavior: smooth;
     scroll-margin-top: 120px;
     
+    
 }
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(32, 32, 32);
     
 }
 
@@ -100,7 +102,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     color:white;
     font-size: 5rem;
     font-weight: 900;
@@ -113,11 +114,16 @@ section:nth-child(even) {
 }
 
 
-#home, #contact, #cuisine{
+#home, #cuisine{
     background-image: url(images/black-smoke.jpg);
     background-size: cover;
     background-blend-mode:lighten;
     
+    
+}
+
+#map, #cuisine {
+    margin-top: 150px;
 }
 
 
@@ -127,9 +133,17 @@ section:nth-child(even) {
 
 
 #about {
-    min-height: 120vh;
-    background-image: url(images/white-smoke.jpg);
-    background-size: cover;
+    min-height: 100vh;
+    background-image: url(/images/ribbon.png); 
+    background-color: rgb(32, 32, 32);
+    background-size:cover;
+    border-top: 10px solid black;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+
 }
 
 
@@ -194,12 +208,12 @@ section:nth-child(even) {
 #map .subheadings {
     font-size: 30px;
     color: rgb(238, 238, 238);
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 3px 1px 5px rgb(0, 0, 0);
     text-align: center;
     max-width: 50%;
-    padding: 50px;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    font-weight: 200;
+    
+    
     
 }
 
@@ -211,10 +225,12 @@ section:nth-child(even) {
  
     gap: 10px;
     font-weight: normal;
-
+    padding-bottom: 150px;
     
 
 }
+
+
 
 #cuisine .subheadings {
     font-size: 30px;
@@ -225,7 +241,7 @@ section:nth-child(even) {
     padding: 50px;
     padding-top: 70px;
     padding-bottom: 30px;
-    font-weight: bold;
+    font-weight: 200;
 
 }
 
@@ -359,22 +375,100 @@ section:nth-child(even) {
     padding-top: 10px;
     border-radius: 50%;
     color: white;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(194, 194, 194);
     border: white solid 2px;
     
     
 }
+.details .rating-number:hover {
 
-#about {
-    display: flex;
+    background-color: rgb(176, 176, 176);
+    border: white solid 2px;
+    
+    
+    
+}
+
+
+#about img {
+    border-bottom: 5px solid white;
+
 }
 #about .about-text {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 22px;
-    max-width: 60%;
+    max-width: 70%;
+    color: rgb(238, 238, 238);
+    font-weight: 200;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.361);
+    border-radius: 5px;
+    padding: 30px;
+    
 }
+#about .about-title {
+    font-weight: 200;
+    font-size: 40px;
+
+}
+
+#contact {
+    margin-top: 300px;
+    border: 0;
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#contact .contact-title {
+    font-weight: 200;
+    font-size: 40px;
+}
+
+#contact .contact-container {
+    display: flex;
+    width: 80%;
+    height: 800px;
+}
+
+#contact .contact-column {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    align-items:center;
+    gap: 50px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+#contact .contact-column img{
+    height: 60px;
+    
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+}
+#contact #mail img{
+
+    background-color: rgb(139, 192, 238);
+}
+#contact #phone img{
+
+    background-color: rgb(180, 255, 173);
+}
+#contact #pin img{
+
+    background-color: rgb(255, 135, 135);
+}
+
 
 
 
@@ -447,13 +541,13 @@ section:nth-child(even) {
     }
 
     #map .subheadings {
-        font-size: 30px;
-        max-width: 70%;
+        font-size: 20px;
+        max-width: 60%;
         
     }
     #cuisine .subheadings {
-        font-size: 30px;
-        max-width: 70%;
+        font-size: 20px;
+        max-width: 60%;
         
     }
 
@@ -486,10 +580,39 @@ section:nth-child(even) {
     }
 
     #about .about-text {
-        font-size: 18px;
-        max-width: 80%;
+        font-size: 20px;
+        max-width: 70%;
         
     }
+
+    #about .about-title {
+        font-size: 30px;
+    
+    }
+
+    #contact .contact-container {
+        width: 80%;
+    }
+
+    #contact .contact-column img{
+        height: 50px;
+        border-radius: 10px;
+        padding: 5px;
+       
+    }
+    #contact .contact-column {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #contact {
+        margin-top: 100px;
+        
+    }
+    #contact .contact-title {
+        font-size: 30px;
+    }
+
+
 
 }
 
