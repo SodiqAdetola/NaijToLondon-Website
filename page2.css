@@ -1,3 +1,8 @@
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 120px;
+    
+}
 body {
     font-family: sans-serif;
     margin: 0;
@@ -72,6 +77,8 @@ nav button {
     color: white;
     border-radius: 5px;
     padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 7px;
     padding-left: 13px;
     transition: 0.3s;
     margin-left: 50px;
@@ -90,11 +97,10 @@ nav button:hover {
 }
 
 section {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
     color:white;
     font-size: 5rem;
     font-weight: 900;
@@ -115,10 +121,18 @@ section:nth-child(even) {
 }
 
 
+#contact {
+    min-height: 100vh;
+}
+
+
 #about {
+    min-height: 120vh;
     background-image: url(images/white-smoke.jpg);
     background-size: cover;
 }
+
+
 
 
 
@@ -127,37 +141,66 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: -5px 0px 5px -5px rgb(0, 0, 0);
+    padding-left: 20px;
+    
 }
 
 #home div p {
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(238, 238, 238);
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
     text-align: center;
     margin-right: 100px;
     
 }
 
+#home {
+    margin-top: 100px;
+}
+
 #home .container {
+    height: 100%;
     display: flex;
-    gap: 20px;
+    
+    
+    
 }
 
 #home div img {
-    height: 115%;
+    height: 100%;
     width: 750px;
-    box-shadow: 5px 0px 5px -3px rgb(0, 0, 0);
     padding: 0;
     object-fit: cover;
+    padding-bottom: 100px;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+
 }
 
 
 
 #map #map-container {
-    min-height: 550px;
+    min-height: 500px;
     width: 90%;
     border-radius: 10px;
-    margin-top: 100px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+#map .subheadings {
+    font-size: 30px;
+    color: rgb(238, 238, 238);
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-align: center;
+    max-width: 50%;
+    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    
 }
 
 #cuisine {
@@ -173,14 +216,26 @@ section:nth-child(even) {
 
 }
 
+#cuisine .subheadings {
+    font-size: 30px;
+    color: rgb(238, 238, 238);
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-align: center;
+    max-width: 50%;
+    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-weight: bold;
+
+}
+
 #cuisine .cuisine-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
     max-width: 900px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 125px;
     border-radius: 10px;
     padding-left: 10px;
     color: rgb(61, 61, 61);
@@ -190,11 +245,12 @@ section:nth-child(even) {
     
     box-shadow: 0px 0px 100px 0px rgb(0, 0, 0);
 
+    margin-bottom: 200px;
 
 }
 
 .cuisine-container .title {
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
 
@@ -206,7 +262,7 @@ section:nth-child(even) {
     
 }
 .cuisine-container .food-image img{
-    max-width: 100%;
+    width: 400px;
     object-fit: cover;
     border-radius: 5px;
     
@@ -223,37 +279,60 @@ section:nth-child(even) {
     
     border-radius: 5px;
     background-color: rgb(194, 194, 194);
-    height: min-content;
+    height: content;
     
 
 
     
 }
+
+.info h3 {
+    text-align: center;
+    font-weight: 400;
+}
 .cuisine-container .weblink {
+    width: 100%;
     font-size: 15px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    gap: 40px;
+}
+
+.weblink .back-to-map {
+    background-color: rgb(255, 73, 73);
     
-    
-   
+}
+
+.weblink .website-link {
+    background-color: rgb(43, 180, 43);
+
+}
+.weblink .back-to-map:hover{
+    color: white;
+    border-radius: 5px;
+
+    background-color: rgb(207, 63, 63);
+}
+.weblink .website-link:hover{
+    color: white;
+    border-radius: 5px;
+
+    background-color: rgb(79, 154, 79);
 }
 
 .weblink a {
+    min-width: 200px;
+    text-align: center;
     text-decoration: none;
     color: white;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    background-color: rgb(156, 156, 156);
-}
-.weblink a:hover{
-    color: white;
-    border-radius: 5px;
 
-    background-color: rgb(73, 73, 73);
 }
+
+
 
 
 
@@ -266,7 +345,36 @@ section:nth-child(even) {
     font-size: 17px;
 
 }
+.details div {
 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.details .rating-number {
+    text-align: center;
+    height: 30px;
+    width: 40px;
+    padding-top: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(167, 167, 167);
+    border: white solid 2px;
+    
+    
+}
+
+#about {
+    display: flex;
+}
+#about .about-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    max-width: 60%;
+}
 
 
 
@@ -295,6 +403,7 @@ section:nth-child(even) {
     #home .container {
         display: block;
         width: 100%;
+        padding-bottom: 150px;
     
         
     }
@@ -324,6 +433,7 @@ section:nth-child(even) {
         
     }
 
+
     #home .slogan-container {
         display: flex;
         justify-content:center;
@@ -335,11 +445,19 @@ section:nth-child(even) {
         background-color: black;
 
     }
-    .details p{
-    
-        font-size: 13px;
-    
+
+    #map .subheadings {
+        font-size: 30px;
+        max-width: 70%;
+        
     }
+    #cuisine .subheadings {
+        font-size: 30px;
+        max-width: 70%;
+        
+    }
+
+
 
     .image-info-container {
         display: flex;
@@ -349,7 +467,8 @@ section:nth-child(even) {
     }
 
     .cuisine-container .food-image img{
-        max-height: 100%;
+        min-width: 100%;
+        max-height: 250px;
         object-fit: cover;
         border-radius: 5px;
         
@@ -358,7 +477,18 @@ section:nth-child(even) {
     }
 
     #cuisine .cuisine-container {
-        width: 70%;
+        width: 80%;
+    }
+
+    .weblink a {
+        min-width: 0px;
+
+    }
+
+    #about .about-text {
+        font-size: 18px;
+        max-width: 80%;
+        
     }
 
 }

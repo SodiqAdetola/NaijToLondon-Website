@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(cuisine-background.jpg) no-repeat center center fixed;
+    background: url(images/cuisine-background.jpg) no-repeat center center fixed;
     background-size:cover;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .wrapper h1 {
     text-align: center;
-    
+    font-weight: bold;
 }
 
 .wrapper input {
@@ -72,10 +72,10 @@ button:hover {
 p {
     margin: 0;
     margin-top: 20px;
-    color: black
+    color: rgb(0, 0, 0)
 }
 
-.logo-image {
+img {
     display: flex;
     align-items: center;
     justify-content: center;

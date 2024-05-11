@@ -7,54 +7,110 @@
             "contact": "02037718665",
             "image": "images/enish-image.png",
             "website": "http://www.enish.co.uk/",
-            "rating": "4.2",
+            "rating": 4.2,
             "description": "Our chefs expertly prepare traditional favourites like Jollof Rice, Egusi Soup & all of your favourite dishes. At Enish, we're passionate about sharing the rich culinary traditions of Nigeria with the world. Come and join us for a truly authentic and delicious dining experience today!"
         },
 
         {
             "id": 2,
-            "name": "Presidential Suya",
-            "address": "160-164 Old Kent Rd, London SE1 5TY",
-            "contact": "02077084491",
-            "image": "images/presidental-suya-image.png",
-            "website": "https://www.presidentialsuya.co.uk/",
-            "rating": "3.8",
-            "description": "We offer discerning customers a true, authentic Nigerian cuisine. Our regulars repeat again and again for the never-changing favourites. Our lively and refreshing seasonal inspired additions keeps things interesting. Our food is intuitively and instinctively prepared that we guarantee no recipe books, no measuring or timing devices in our kitchen."
-        },
-
-        {
-            "id": 3,
             "name": "280 Degrees",
             "address": "280 Kilburn High Rd, London NW6 2BY",
             "contact": "02073288832",
             "image": "images/280-degrees-image.png",
             "website": "https://280degrees.uk/",
-            "rating": "4.0",
+            "rating": 4.0,
             "description": "280 Degrees African restaurant delivers lip-smacking  African Foods and much more straight to your doorstep in no time. Savor the flavors of our culinary creations, where fresh ingredients meet expert craftsmanship. Whether it's a classic dish or a modern twist, our restaurant offers a delectable experience for every taste."
         },
         
 
         {
+            "id": 3,
+            "name": "Akoko",
+            "address": "21 Berners St, London W1T 3LP",
+            "contact": "02073230593",
+            "image": "images/akoko-image.png",
+            "website": "http://akoko.co.uk/",
+            "rating": 4.8,
+            "description": "Our culinary ethos blends innovation, live fire cooking, umami, and an array of exotic spices. Infused with our founder Aji Akokomi’s West African heritage, our dedicated team of chefs expertly craft a diverse range of dishes, honouring tradition while pushing the boundaries of culinary creativity. We blend the freshest seasonal British ingredients with African spices, resulting in a dining experience that is both culturally resonant and distinctly exceptional."
+        },
+
+        {
             "id": 4,
-            "name": "",
-            "address": "",
-            "contact": "",
-            "image": "",
-            "website": "",
-            "rating": "",
-            "description": ""
+            "name": "The Whitehart Restaurant",
+            "address": "44 Erith High St, Erith DA8 1QY",
+            "contact": "01322400196",
+            "image": "images/the-whitehart-restaurant-image.png",
+            "website": "http://www.dewhitehartrestaurant.com/",
+            "rating": 3.9,
+            "description": "We are an exclusive ultra-modern eatery and entertainment venue in Erith, offering a fine dining experience second to none. Using freshly sourced local produce, we draw on our passion for fusing African and world flavours to deliver outstanding dishes that leave you wanting more. The food we serve is meant to be home from home in a relaxed and friendly environment. We have room for private hire downstairs- it is nice and tantalizing. We also have our own DJ entertainment on weekends, playing various genres from 80s to afrobeats and afropop. Just a quick reminder, our food is mainly organic, and all cooked with fresh ingredients that are nourishing. Many Nigerian recipes are plant-based, so are suitable for vegetarians and vegans. Our grilled fish with fried yam and Asun is our signature food, and we have plenty more delicious dishes on our menu. "
         },
 
         {
             "id": 5,
-            "name": "",
-            "address": "",
-            "contact": "",
-            "image": "",
-            "website": "",
-            "rating": "",
-            "description": ""
+            "name": "805 Restaurants",
+            "address": "24 Kendal St, St George's Fields, London W2 2AW",
+            "contact": "02074023266",
+            "image": "images/805-restaurant-image.png",
+            "website": "http://www.805restaurants.com/",
+            "rating": 4.3,
+            "description": "Our food and food quality have been our focus since 2001, when we opened our first restaurant. Every meal is made to the highest standard by our skilled chefs using indigenous ingredients and traditional cooking methods to bring you great-tasting and great-looking food. Twenty years on, this has not changed. Our menu evokes fond memories and tells the story of Nigerian food, from the well-known Jollof rice to regional soups and our much-loved signature Monika Fish."
+        },
+
+        {
+            "id": 6,
+            "name": "Akara Restaurant",
+            "address": "Arch 208, 18 Stoney St, London SE1 9AD",
+            "contact": "02038615190",
+            "image": "images/akara-restaurant-image.png",
+            "website": "https://www.akaralondon.co.uk/",
+            "rating": 4.6,
+            "description": "Explore our distinctive approach to Akara, a blend of the crispy, fluffy attributes of Nigerian Akara Osu with the flavour-packed delights of Brazilian Acaraje. This reimagined version of Akara is at the core of our a la carte menu, together with a diverse selection of dishes, each narrating the journey of Akara through various regions and countries"
+        },
+
+        {
+            "id": 7,
+            "name": "Ikoyi Restaurant",
+            "address": "180 Strand, Temple, London WC2R 1EA",
+            "contact": "02035834660",
+            "image": "images/ikoyi-restaurant-image.png",
+            "website": "http://ikoyilondon.com/",
+            "rating": 4.5,
+            "description": "Ikoyi builds its own spice-based cuisine around British micro-seasonality: vegetables slowly grown for flavour, sustainable line-caught fish, and aged native beef. Our kitchen serves guests an interpretation of produce in its optimal state, harnessing as much flavour as possible while respecting the true nature of the ingredient. The foundation for our menu is a vast collection of spices with a focus on sub-Saharan West Africa, which we have sourced with utmost care since opening."
+        },
+
+        {
+            "id": 8,
+            "name": "Chishuru",
+            "address": "3 Great Titchfield St., London W1W 8AX",
+            "contact": "N/A",
+            "image": "images/chishuru-image.png",
+            "website": "http://www.chishuru.com/",
+            "rating": 4.5,
+            "description": "Chishuru is not a fine dining restaurant. Yes we have a Michelin star but our style is relaxed and homely, we play music, and some of our customers can get loud - that’s who we are."
+        },
+
+        {
+            "id": 9,
+            "name": "The Flygerians",
+            "address": "Peckham Palms, 14 Bournemouth Cl, London SE15 4PB",
+            "contact": "N/A",
+            "image": "images/the-flygerians-image.png",
+            "website": "https://www.theflygerians.com/",
+            "rating": 4.5,
+            "description": "Welcome to Flygerians! We are an independent, family-run Nigerian street food restaurant in Peckham, South London. Inspired by our grandma’s legendary cooking, we opened our restaurant to bring the delicious taste of Nigeria and unifying power of food to our local London community."
+        },
+
+        {
+            "id": 10,
+            "name": "Cally Munchy",
+            "address": "66 Great Suffolk St, London SE1 0BL",
+            "contact": "N/A",
+            "image": "images/cally-munchy-image.png",
+            "website": "https://www.callymunchy.com/",
+            "rating": 4.6,
+            "description": "Our restaurant is a reflection of our commitment to creating an ambiance that matches the excellence of our food. From the captivating decor to the intricately designed plates, every element has been chosen to elevate your dining experience. Indulge in a fine dining experience unlike any other - where every dish is meticulously fashioned into a work of art on your plate. Our expert chefs invest their mastery into each masterpiece, guaranteeing that the cuisine is not solely a sensory delight but a voyage of cultural discovery. Each plate narrates a tale, intricately intertwining the lively African spices with the refined intricacies of global gastronomy."
         }
         
+
     ]
 }
