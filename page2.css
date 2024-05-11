@@ -56,7 +56,6 @@ nav a {
     margin-right: 10px;
     transition: 0.5s;
 
-
 }
 
 
@@ -213,6 +212,7 @@ section:nth-child(even) {
     text-align: center;
     max-width: 50%;
     font-weight: 200;
+    
     
     
     

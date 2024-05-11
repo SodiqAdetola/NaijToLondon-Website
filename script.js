@@ -84,7 +84,7 @@ function createMarker(map, location, name) {
 
     marker.addListener('mouseover', () => {
         const infoWindow = new google.maps.InfoWindow({
-            content:  `<div style="color: black; font-weight: bold;">
+            content:  `<div style="color: black; font-weight: 500; font-size: 15px;">
                         ${name}
                     </div>`,
             disableAutoPan: true
