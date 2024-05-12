@@ -150,7 +150,7 @@ function addCuisine({name,image,description,address,contact,rating,website}) {
     div.innerHTML = `
         <div class="title"><h3 id="${name}">${name}</h3></div>
         <div class="image-info-container">
-            <div class="food-image"><img src="${image}" alt="food of restautant image"></div>
+            <div class="food-image"><img src="${image}" alt="image of the restautant ${name}"></div>
             <div class="info">
                 <h3>About ${name}</h3>
                 <p>${description}</p>
