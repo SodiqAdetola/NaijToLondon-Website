@@ -171,8 +171,7 @@ section:nth-child(even) {
     background: -webkit-linear-gradient(#1f1f1f, #5a5a5a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-    filter: blur(1px);
+
     
     
 }
