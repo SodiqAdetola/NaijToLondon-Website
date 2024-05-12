@@ -88,11 +88,13 @@ nav button {
 
 
 nav button:hover {
-    border: 0;
+    
     background-color: white;
     color: black;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
     transition: 0.3s;
 
 }
