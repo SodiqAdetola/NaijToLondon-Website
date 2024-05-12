@@ -53,7 +53,7 @@ function initMap() {
             const businesses = json.business;
 
             businesses.forEach(async business => {
-                const { address, name } = business;
+                const { address, name, rating} = business;
 
                 try {
                     const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${API_KEY}`);
@@ -62,7 +62,7 @@ function initMap() {
                     console.log(location);
 
                     // Calling function to create a marker with the retrieved variables
-                    createMarker(map, location, name);
+                    createMarker(map, location, name, rating);
                 
                 } catch (error) {
                     console.error(`Error geocoding address for ${business.name}`, error);
@@ -73,7 +73,7 @@ function initMap() {
     
 }
 
-function createMarker(map, location, name) {
+function createMarker(map, location, name, rating) {
 
     //create marker using variables
     const marker = new google.maps.Marker({
@@ -84,9 +84,10 @@ function createMarker(map, location, name) {
 
     marker.addListener('mouseover', () => {
         const infoWindow = new google.maps.InfoWindow({
-            content:  `<div style="color: black; font-weight: 500; font-size: 15px;">
-                        ${name}
-                    </div>`,
+            content:  ` 
+                        <div style="color: black; font-weight: 500; font-size: 15px;">${name}, Rating: ${rating}
+                        </div>
+                            `,
             disableAutoPan: true
         });
         infoWindow.open(map, marker);
