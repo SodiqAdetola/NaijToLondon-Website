@@ -47,28 +47,28 @@ function initMap() {
         mapId: '53c21e62b06dfec'
     });
 
-    //fetch data to use in creating marker
-    fetch("http://localhost:3000/business")
-    .then(res => res.json())
-    .then(json => {
-        json.forEach(async (data) => {
-            const address = data.address;
-            const name = data.name;
-            try {
-                const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${API_KEY}`);
-                const responseData = response.data
-                const location = responseData.results[0].geometry.location;
+    fetch("/database/cuisine.json")
+        .then(res => res.json())
+        .then(json => {
+            const businesses = json.business;
 
-                // testing that location displays as expected
-                console.log(location);
-                // calling function to create a marker with the retrieved variables
-                createMarker(map, location, name);
+            businesses.forEach(async business => {
+                const { address, name } = business;
+
+                try {
+                    const response = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(address)}&key=${API_KEY}`);
+                    const responseData = response.data;
+                    const location = responseData.results[0].geometry.location;
+                    console.log(location);
+
+                    // Calling function to create a marker with the retrieved variables
+                    createMarker(map, location, name);
                 
-            } catch (error) {
-                console.error(`Error geocoding address for ${data.name}`, error);
-            }
+                } catch (error) {
+                    console.error(`Error geocoding address for ${business.name}`, error);
+                }
+            });
         });
-    });
 
     
 }
@@ -116,27 +116,30 @@ function createMarker(map, location, name) {
 
 
 
-
-//retrieving html element for where I want to add the cuisine entities
-let body = document.getElementById("cuisine")
-
-
-
 //retreiving cuisine data from json data displayed in the link.
 
-fetch("http://localhost:3000/business")
-    //convert response from fetch method to json data format
-    .then(res => res.json())
-    //process the jason data format
-    .then(json => {
-        //map fuction to iterate through json data format.
-        json.map(data => {
-            console.log(data)
-            //appending the div created from addCuisine to the html element.
-            body.append(addCuisine(data));
-        })
-    })
+fetch("/database/cuisine.json")
 
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Error fetching data: " + response.statusText);
+        }
+        return response.json();
+    })
+    .then(data => {
+        const businesses = data.business;
+        const body = document.getElementById("cuisine");
+
+        businesses.forEach(business => {
+            // Calling the addCuisine function with each business data
+            const newCuisineDiv = addCuisine(business);
+            // Append the generated HTML to the body
+            body.appendChild(newCuisineDiv);
+        });
+    })
+    .catch(error => {
+        console.error("Error fetching data:", error);
+    });
 
 
 
