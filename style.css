@@ -4,6 +4,7 @@ body {
     align-items: center;
     background: url(images/cuisine-background.jpg) no-repeat center center fixed;
     background-size:cover;
+    background-color: black;
 }
 
 .wrapper {
