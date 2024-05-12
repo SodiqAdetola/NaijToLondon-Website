@@ -30,8 +30,6 @@ header {
 
 }
 
-
-
 nav {
     width: 100%;
     min-width:fit-content;
@@ -56,8 +54,6 @@ nav a {
     transition: 0.5s;
 
 }
-
-
 
 nav a:hover,
 nav a.active {
@@ -97,6 +93,37 @@ nav button:hover {
     transition: 0.3s;
 
 }
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -20px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.532);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding-top: 50px;
+}
+.sidebar a {
+    width: 80%;
+}
+.hide-big-screen {
+    display: none;
+}
+
+
+
+
+
+
+
 
 section {
     display: flex;
@@ -152,6 +179,15 @@ section:nth-child(even) {
 
 
 
+
+
+
+
+
+
+
+
+
 #home .slogan-container {
     display: flex;
     align-items: center;
@@ -170,9 +206,7 @@ section:nth-child(even) {
 
     background: -webkit-linear-gradient(#1f1f1f, #5a5a5a);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    
+    -webkit-text-fill-color: transparent; 
     
 }
 
@@ -184,8 +218,6 @@ section:nth-child(even) {
     height: 100%;
     display: flex;
     
-    
-    
 }
 
 #home div img {
@@ -195,6 +227,16 @@ section:nth-child(even) {
     object-fit: cover;
     padding-bottom: 100px;
 }
+
+
+
+
+
+
+
+
+
+
 
 #map {
     display: flex;
@@ -220,10 +262,15 @@ section:nth-child(even) {
     max-width: 50%;
     font-weight: 200;
     
-    
-    
-    
 }
+
+
+
+
+
+
+
+
 
 #cuisine {
     width: 100%;
@@ -237,8 +284,6 @@ section:nth-child(even) {
     
 
 }
-
-
 
 #cuisine .subheadings {
     font-size: 30px;
@@ -303,11 +348,7 @@ section:nth-child(even) {
     
     border-radius: 5px;
     background-color: rgb(194, 194, 194);
-    height: content;
-    
-
-
-    
+    height: content;  
 }
 
 .info h3 {
@@ -322,6 +363,15 @@ section:nth-child(even) {
     align-items: center;
     gap: 40px;
 }
+
+
+
+
+
+
+
+
+
 
 .weblink .back-to-map {
     background-color: rgb(255, 73, 73);
@@ -391,11 +441,17 @@ section:nth-child(even) {
 .details .rating-number:hover {
 
     background-color: rgb(176, 176, 176);
-    border: white solid 2px;
-    
-    
+    border: white solid 2px; 
     
 }
+
+
+
+
+
+
+
+
 
 
 #about img {
@@ -421,6 +477,14 @@ section:nth-child(even) {
     font-size: 40px;
 
 }
+
+
+
+
+
+
+
+
 
 #contact {
     margin-top: 300px;
@@ -490,7 +554,8 @@ section:nth-child(even) {
         
     }
     nav {
-        justify-content: space-around;
+        justify-content: end;
+        gap: 20px;
     }
 
     nav a:hover,
@@ -502,21 +567,32 @@ section:nth-child(even) {
     nav button {
         margin: 0;
     }
+    .sidebar .exit-icon {
+        width: max-content;
+        margin: 10px;
+    }
+
+    .hide-small-screen {
+        display: none;
+    }
+    .hide-big-screen {
+        display: contents;
+    }
+
+
+
 
     #home .container {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         padding-bottom: 150px;
-    
-        
     }
 
     #home div img {
-        
-        height: 400px;
+        height: 350px;
         width: 100%;
         object-fit: cover;
-        object-position: 50%;   
         margin: 0;
         padding: 0;
         box-shadow: 3px 3px 5px black;
@@ -551,13 +627,19 @@ section:nth-child(even) {
         max-width: 60%;
         
     }
+
+
+
+
+
+
+
+
     #cuisine .subheadings {
         font-size: 25px;
         max-width: 60%;
         
     }
-
-
 
     .image-info-container {
         display: flex;
@@ -570,10 +652,9 @@ section:nth-child(even) {
         min-width: 100%;
         max-height: 250px;
         object-fit: cover;
+        overflow: hidden;
         border-radius: 5px;
-        
-        
-        
+         
     }
 
     #cuisine .cuisine-container {
@@ -585,6 +666,13 @@ section:nth-child(even) {
 
     }
 
+
+
+
+
+
+
+
     #about .about-text {
         font-size: 20px;
         max-width: 70%;
@@ -595,6 +683,13 @@ section:nth-child(even) {
         font-size: 30px;
     
     }
+
+
+
+
+
+
+
 
     #contact .contact-container {
         width: 80%;

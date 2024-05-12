@@ -10,10 +10,19 @@ let navlinks = document.querySelectorAll("header nav a");
 function logout() {
     window.location.assign('index.html');
 }
-
 window.onload = () => {
     window.scrollTo({ top: 0, behavior: 'auto' }); // Starts window from top of the page
 };
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex';
+
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none';
+
+}
 
 
 window.onscroll = () => {
@@ -120,7 +129,6 @@ function createMarker(map, location, name, rating) {
 //retreiving cuisine data from json data displayed in the link.
 
 fetch("/database/cuisine.json")
-
     .then(response => {
         if (!response.ok) {
             throw new Error("Error fetching data: " + response.statusText);
@@ -193,6 +201,9 @@ function addCuisine({name,image,description,address,contact,rating,website}) {
 window.initMap = initMap;
 
 window.logout = logout;
+
+window.showSidebar = showSidebar;
+window.hideSidebar = hideSidebar;
 
 
 

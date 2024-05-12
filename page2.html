@@ -14,11 +14,29 @@
         <img src="images/naij-cuisine-logo.png" alt="website logo image" class="logo-image">
 
         <nav>
+        <nav class="sidebar" onclick=hideSidebar()>
+            <a class="exit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+            </a>
             <a href="#home">Home</a>
             <a href="#map">Map</a>
             <a href="#cuisine">Cuisine</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+        </nav>
+        <nav class="mainbar">
+            <a href="#home" class="hide-small-screen">Home</a>
+            <a href="#map" class="hide-small-screen">Map</a>
+            <a href="#cuisine" class="hide-small-screen">Cuisine</a>
+            <a href="#about" class="hide-small-screen">About</a>
+            <a href="#contact" class="hide-small-screen">Contact</a>
+            <a class="hide-big-screen" onclick=showSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </a>
 
             <button class="logout" type="submit" onclick="logout()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
@@ -26,6 +44,7 @@
                     <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
                 </svg>
             </button>
+        </nav>
         </nav>
         <br>
     </header>
@@ -96,7 +115,7 @@
         <p>© Sodiq Agbabiaka - Naij to Ldn™</p>
     </div>
 
-  
+
     <script src="script.js" type="module"></script>
     
     <script
