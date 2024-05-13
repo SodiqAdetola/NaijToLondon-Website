@@ -9,7 +9,7 @@ function auth(event) {
     var email = document.getElementById("email").value;
 
     if (email.trim() === '' || !email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      alert("Cannot submit invalid email, Email must contain '@' and  '.' and follow a correct email format.");
+      alert("Cannot submit invalid email, Email must contain '@' and  '.' and must follow a correct email format.");
     }
     else {
     event.preventDefault();
