@@ -165,10 +165,6 @@ section:nth-child(even) {
     border-top: 10px solid black;
     display: flex;
     flex-direction: column;
-
-    
-    
-
 }
 
 
@@ -453,10 +449,6 @@ section:nth-child(even) {
 
 
 
-#about img {
-    border-bottom: 5px solid white;
-
-}
 #about .about-text {
     justify-content: center;
     align-items: center;
