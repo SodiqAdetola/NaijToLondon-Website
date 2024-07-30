@@ -60,7 +60,7 @@ function initMap() {
         mapId: '53c21e62b06dfec'
     });
 
-    fetch("/NaijToLondon-Website/database/cuisine.json")
+    fetch("/database/cuisine.json")
         .then(res => res.json())
         .then(json => {
             const businesses = json.business;
@@ -132,7 +132,7 @@ function createMarker(map, location, name, rating) {
 
 //retreiving cuisine data from json data displayed in the link.
 
-fetch("/NaijToLondon-Website/database/cuisine.json")
+fetch("/database/cuisine.json")
     .then(response => {
         if (!response.ok) {
             throw new Error("Error fetching data: " + response.statusText);
