@@ -1,14 +1,12 @@
 # UserInterface-Design Project
 
 https://sodiqadetola.github.io/NaijToLondon-Website/
-
-<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 56 32" src="https://github.com/user-attachments/assets/8eb931f3-27fd-49e2-8f9e-7eeb79da0266" />
-<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 56 21" src="https://github.com/user-attachments/assets/4a7d9af0-5e39-4af2-9303-f018e337198f" />
-<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 56 08" src="https://github.com/user-attachments/assets/787ba26e-28e5-40f8-9b0f-86d93f8708d5" />
-<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 55 44" src="https://github.com/user-attachments/assets/377411a5-f008-4ab0-a1a9-f34d09adbd43" />
-<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 55 20" src="https://github.com/user-attachments/assets/513bd964-ee78-4c15-883d-4e4596c4a780" />
 <img width="400" height="250" alt="Screenshot 2025-09-10 at 23 55 00" src="https://github.com/user-attachments/assets/89bc5964-58f9-4931-872c-be254b43b37e" />
-
+<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 55 20" src="https://github.com/user-attachments/assets/513bd964-ee78-4c15-883d-4e4596c4a780" />
+<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 55 44" src="https://github.com/user-attachments/assets/377411a5-f008-4ab0-a1a9-f34d09adbd43" />
+<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 56 08" src="https://github.com/user-attachments/assets/787ba26e-28e5-40f8-9b0f-86d93f8708d5" />
+<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 56 21" src="https://github.com/user-attachments/assets/4a7d9af0-5e39-4af2-9303-f018e337198f" />
+<img width="400" height="250" alt="Screenshot 2025-09-10 at 23 56 32" src="https://github.com/user-attachments/assets/8eb931f3-27fd-49e2-8f9e-7eeb79da0266" />
 
 ## Introduction
 The tourism website for hobbyists I have created focuses on the discovery of high-end Nigerian cuisine that can be found within the city of London. When a tourist visits London, they are introduced to an unfamiliar environment. My website fosters the connection between tourists interested in Nigerian cuisine and the businesses within London that provide this at a high quality, as a result the tourist can feel comfortable in knowing where to look when they go out to eat and try out different cuisines, in this case Nigerian cuisine. The key user requirements would be for the user to be able to seamlessly navigate and explore through a variety of Nigerian restaurant businesses. Another one would be that the user must be able to select restaurants based on certain requirements such as location and rating.
