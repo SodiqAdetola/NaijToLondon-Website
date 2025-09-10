@@ -29,8 +29,10 @@ This would meet the user requirements as the user can select the restaurant icon
 ## Background Technologies
 Bootstrap:
 - I used bootstrap to get the designs for my icons. These icons add visual appeal to my webpage and allow for users to comprehend and identify information very quickly.
+  
 Google Maps JavaScript API:
 - This will allow me to imbed google maps functions into my website.
+  
 Json:
 - This means I can quickly create and fill in data for each restaurant and iterate through the data to create the restaurant location markers and front-end display of each restaurant data.
 - Although this is a prototype, using Json is less time consuming than hardcoding all the data I want to display.
